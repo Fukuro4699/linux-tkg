@@ -6,13 +6,13 @@ on:
   workflow_call:
     inputs:
       _cpusched:
-        required: yes
-        default: "bore"
-
+        required: true
+        type: string
 
 env:
   _processor_opt: "x86-64-v3"
   _git_mirror: "gregkh"
+  _cpusched: "bore"
   PKGDEST: "/tmp/linux-tkg"
   _debugdisable: "true"
   _noccache: "true"
