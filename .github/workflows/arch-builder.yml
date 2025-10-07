@@ -6,8 +6,8 @@ on:
   workflow_call:
     inputs:
       _cpusched:
-        required: true
-        type: string
+        required: false
+        default: "bore"
 
 
 env:
