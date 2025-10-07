@@ -12,7 +12,6 @@ on:
 env:
   _processor_opt: "x86-64-v3"
   _git_mirror: "gregkh"
-  _cpusched: "bore"
   PKGDEST: "/tmp/linux-tkg"
   _debugdisable: "true"
   _noccache: "true"
@@ -31,7 +30,7 @@ env:
 jobs:
   build-kernel:
     env:
-      _cpusched: ${{ inputs._cpusched }}
+      _cpusched: bore
 
     runs-on: ubuntu-latest
     container: archlinux:latest
